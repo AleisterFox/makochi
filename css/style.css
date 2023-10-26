@@ -124,8 +124,8 @@ nav ul a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: #9ac7cd;
+  transform: translateX(-50%) translateY(-50%);
+  background: radial-gradient( #9ac7cd 0, #9ac7cd, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -235,6 +235,15 @@ h2 {
 
 #us .button:hover {
   background-color: var(--yellow);
+}
+
+#services {
+  background: url('../img/Servicios.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  height: 110vh;
+  width: 100vw;
 }
 
 @media screen and (min-width: 769px) {

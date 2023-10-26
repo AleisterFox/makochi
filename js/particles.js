@@ -45,7 +45,7 @@ class Particle {
         if (a1 === 2) {
             this.size = 10;
         } else {
-            this.size = 35;
+            this.size = 50;
         }
 
         this.dsize = size;
@@ -99,13 +99,13 @@ class Particle {
 // Initiate particles
 
 function init() {
-    let numberOfParticles = (container.height * container.width) / 10000;
+    let numberOfParticles = (container.height * container.width) / 30000;
     for (let i = 0; i < numberOfParticles; i++) {
         let size = (Math.random() * 20) + 1;
         let x = (Math.random() * ((window.innerWidth - size * 5) - (size * 5)) + size * 5);
         let y = (Math.random() * ((window.innerHeight - size * 5) - (size * 5)) + size * 5);
-        let directionX = (Math.random() * 4) - 2;
-        let directionY = (Math.random() * 4) - 2;
+        let directionX = (Math.random() * 2) - 1;
+        let directionY = (Math.random() * 2) - 1;
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size));
     }
