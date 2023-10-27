@@ -99,10 +99,12 @@ nav ul a {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url('../img/Fondo.jpg');
+  background: url('../img/Fondo.png');
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: cover;
   z-index: -1;
+  overflow: hidden;
 }
 
 #hero {
@@ -125,7 +127,7 @@ nav ul a {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background: radial-gradient( #9ac7cd 0, #9ac7cd, transparent 100%);
+  background: radial-gradient(#9ac7cd 0, #9ac7cd, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -187,6 +189,13 @@ h2 {
   object-fit: contain;
 }
 
+body,
+main {
+  background: url('../img/paper-texture.jpg');
+  position: relative;
+  z-index: -999;
+}
+
 #us h2 {
   color: var(--blue);
   margin: 0 auto;
@@ -244,6 +253,77 @@ h2 {
   background-size: contain;
   height: 110vh;
   width: 100vw;
+  display: flex;
+  padding: 10% 8rem;
+  gap: 10rem;
+}
+
+#services>figure {
+  width: 30rem;
+  height: 30rem;
+  aspect-ratio: 1/1;
+  border: 1px solid white;
+  border-radius: 400px;
+}
+
+#services .title {
+  background-color: #FFF;
+  height: 50%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid;
+}
+
+#services .title h2 {
+  width: 70%;
+  color: var(--yellow);
+  text-align: center;
+  font-family: Apple Juice;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+#services .services {
+  margin-top: 15%;
+  display: flex;
+  gap: 5rem;
+  height: fit-content;
+}
+
+#services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services .service figure {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 300px;
+}
+
+#services .service figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 300px;
+}
+
+#services .service h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 500;
+  gap: 2rem;
+}
+
+#facilities .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
 }
 
 @media screen and (min-width: 769px) {
