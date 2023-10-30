@@ -13,17 +13,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Servicios</a></li>
+                <li><a href="nosotros.php">Nosotros</a></li>
+                <li><a href="servicios.php">Servicios</a></li>
                 <li><a href="">Instalaciones</a></li>
             </ul>
             <figure>
-                <a href="index.html"><img src="img/logo.png" alt="Logotipo Makochi"></a>
+                <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
             </figure>
             <ul>
                 <li><a href="">Talleres</a></li>
                 <li><a href="">Inscripciones</a></li>
-                <li><a href="" class="button blue">Contacto</a></li>
+                <li><a href="contact.php" class="button blue">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -46,24 +46,29 @@
             </div>
         </section>
         <section id="values">
-            <h2>Cada peque es valorado, cuidado y guiado hacia un futuro lleno de éxitos, mientras disfruta de un <span>aprendizaje lleno de sonrisas</span>.</h2>
+            <h2>Cada peque es valorado, cuidado y guiado hacia un futuro lleno de éxitos, mientras disfruta de un
+                <span>aprendizaje lleno de sonrisas</span>.</h2>
             <div class="container">
                 <div>
                     <h4>Misión</h4>
-                    <p>Brindar a los niños de “Makochi” las herramientas necesarias para lograr que se desarrollen integralmente en su parte académica, social, emocional y física, a través de compromiso, respeto, trabajo en equipo y amor.</p>
+                    <p>Brindar a los niños de “Makochi” las herramientas necesarias para lograr que se desarrollen
+                        integralmente en su parte académica, social, emocional y física, a través de compromiso,
+                        respeto, trabajo en equipo y amor.</p>
                 </div>
                 <figure>
                     <img src="img/mesita.jpeg" alt="">
                 </figure>
                 <div>
                     <h4>Visión</h4>
-                    <p>Brindar un espacio seguro y confiable donde los alumnos puedan adquirir las herramientas necesarias para sus aprendizajes fomentando la iniciativa, la autonomía y el respeto.</p>
+                    <p>Brindar un espacio seguro y confiable donde los alumnos puedan adquirir las herramientas
+                        necesarias para sus aprendizajes fomentando la iniciativa, la autonomía y el respeto.</p>
                 </div>
                 <figure>
                     <img src="img/casita2.jpeg" alt="">
                 </figure>
                 <div>
-                    <p>Generar un ambiente cálido a través de una comunicación asertiva entre colegio, padres de familia y docentes para facilitar la autonomía, autoestima y seguridad en cada niño.</p>
+                    <p>Generar un ambiente cálido a través de una comunicación asertiva entre colegio, padres de
+                        familia y docentes para facilitar la autonomía, autoestima y seguridad en cada niño.</p>
                 </div>
                 <figure>
                     <img src="img/salon.jpeg" alt="">

@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <header>
+<header>
         <nav>
             <ul>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Servicios</a></li>
+                <li><a href="nosotros.php">Nosotros</a></li>
+                <li><a href="servicios.php">Servicios</a></li>
                 <li><a href="">Instalaciones</a></li>
             </ul>
             <figure>
-                <a href="index.html"><img src="img/logo.png" alt="Logotipo Makochi"></a>
+                <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
             </figure>
             <ul>
                 <li><a href="">Talleres</a></li>
                 <li><a href="">Inscripciones</a></li>
-                <li><a href="" class="button blue">Contacto</a></li>
+                <li><a href="contact.php" class="button blue">Contacto</a></li>
             </ul>
         </nav>
     </header>
