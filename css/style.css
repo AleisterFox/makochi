@@ -25,6 +25,7 @@ ol {
   --yellow: #FBC770;
   --blue: #5A8194;
   --melon: #F49F85;
+  --lila: #D0C9E0;
 }
 
 .button {
@@ -169,7 +170,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   left: 15%;
-  bottom: -8vh;
+  bottom: -25vh;
   row-gap: 3rem;
 }
 
@@ -185,7 +186,7 @@ h2 {
   width: 35rem;
   height: 40rem;
   position: absolute;
-  bottom: 7vh;
+  bottom: -20vh;
   right: 5%;
 }
 
@@ -195,11 +196,15 @@ h2 {
   object-fit: contain;
 }
 
+#us {
+  margin-top: 30rem;
+}
+
 #us h2 {
   color: var(--blue);
   margin: 0 auto;
   margin-top: 10rem;
-  width: 22vw;
+  width: 50rem;
 }
 
 #us .container {
@@ -626,6 +631,113 @@ footer i {
 footer a:hover {
   color: var(--yellow);
 }
+
+
+
+
+/*services page*/
+#services_page {
+  margin-top: 15vh;
+}
+
+#services_page .service_element:first-child {
+  margin-top: 15rem;
+}
+
+#services_page .service_element:first-child h2 {
+  color: var(--lila);
+  font-family: Apple Juice;
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  text-align: left;
+  margin-left: 8rem;
+}
+
+#services_page .service_element:last-child h2 {
+  color: var(--green);
+  font-family: Apple Juice;
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  text-align: right;
+  margin-right: 8rem;
+}
+
+#services_page .service_element>div {
+  position: relative;
+}
+
+#services_page .service_element>div p {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 40rem;
+  margin: 0 8rem;
+}
+
+
+.left_container::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 20rem;
+  border-bottom-right-radius: 20rem;
+  top: 0;
+  z-index: -1;
+  left: 0;  
+}
+
+.right_container::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 20rem;
+  border-bottom-left-radius: 20rem;
+  top: 0;
+  z-index: -1;
+  right: 0;
+}
+
+.service_element:first-child>div::after {
+  background-color: var(--lila);
+}
+
+.service_element:last-child>div::after {
+  background-color: var(--green);
+}
+
+.left_container,.right_container {
+  display: flex;
+  height: 25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#services_page figure {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 300px;
+  /* position: absolute; */
+  margin: 0 8rem;
+}
+
+#services_page figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 200px;
+}
+
+#services_page .left_container figure {
+  /* position: absolute; */
+  right: 25%;
+}
+
+/*services page*/
+
 
 @media screen and (min-width: 769px) {
   #hero img {
