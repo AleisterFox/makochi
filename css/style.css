@@ -19,6 +19,28 @@ ol {
   list-style: none;
 }
 
+@font-face {
+  font-family: Apple Juice;
+  src: url('../Fonts/Apple\ Juice\ Regular.ttf');
+}
+
+@font-face {
+  font-family: Minako;
+  src: url('../Fonts/Minako-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../Tipografia/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../Tipografia/Montserrat-Medium.ttf');
+  font-weight: 500;
+}
+
 :root {
   --green: #BBD36E;
   --purple: #8F79B6;
@@ -26,6 +48,7 @@ ol {
   --blue: #5A8194;
   --melon: #F49F85;
   --lila: #D0C9E0;
+  --aqua: #9AC7CD;
 }
 
 .button {
@@ -48,6 +71,10 @@ ol {
   background-color: var(--green);
 }
 
+.purple {
+  background-color: var(--purple);
+}
+
 .yellow {
   background-color: var(--yellow);
 }
@@ -56,8 +83,16 @@ ol {
   background-color: var(--blue);
 }
 
-.purple {
-  background-color: var(--purple);
+.melon {
+  background-color: var(--melon);
+}
+
+.lila {
+  background-color: var(--lila);
+}
+
+.aqua {
+  background-color: var(--aqua);
 }
 
 main,
@@ -379,16 +414,17 @@ h2 {
 #facilities .table {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
-  justify-content: space-between;
+  gap: auto;
+  justify-content: center;
   align-items: center;
   max-height: 55rem;
 }
 
 #facilities .table figure,
 #facilities .table p {
-  flex-basis: 25rem;
+  flex-basis: 30%;
   height: 25rem;
+  aspect-ratio: 1/1;
   color: var(--blue);
   font-family: Montserrat;
   font-size: 2.4rem;
@@ -396,6 +432,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 2rem;
 }
 
 #facilities .button {
@@ -444,7 +481,8 @@ h2 {
 }
 
 #activities .sheet h3 {
-  width: 50%;
+  width: 60%;
+  margin-top: 4rem;
 }
 
 #activities .sheet figure.activity {
@@ -608,7 +646,7 @@ footer .ig img {
 footer p,
 footer a {
   color: #ffffff;
-  font-family: Poppins;
+  font-family: Montserrat;
   font-size: 1.6rem;
   font-weight: 400;
 }
@@ -644,6 +682,10 @@ footer a:hover {
   margin-top: 15rem;
 }
 
+#services_page .service_element {
+  margin-bottom: 10rem;
+}
+
 #services_page .service_element:first-child h2 {
   color: var(--lila);
   font-family: Apple Juice;
@@ -673,7 +715,7 @@ footer a:hover {
   font-family: Montserrat;
   font-size: 2rem;
   font-weight: 500;
-  width: 40rem;
+  width: 50rem;
   margin: 0 8rem;
 }
 
@@ -687,7 +729,7 @@ footer a:hover {
   border-bottom-right-radius: 20rem;
   top: 0;
   z-index: -1;
-  left: 0;  
+  left: 0;
 }
 
 .right_container::after {
@@ -710,7 +752,8 @@ footer a:hover {
   background-color: var(--green);
 }
 
-.left_container,.right_container {
+.left_container,
+.right_container {
   display: flex;
   height: 25rem;
   align-items: center;
@@ -736,11 +779,265 @@ footer a:hover {
   right: 25%;
 }
 
+#services_page h4,
+#services_page li,
+#services_page .service_element .text p {
+  color: var(--blue);
+  font-family: Montserrat;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-top: 4rem;
+  margin-left: 8rem;
+}
+
+#services_page ul {
+  list-style: disc;
+  margin-left: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+#services_page li {
+  flex-basis: 34rem;
+}
+
+#services_page .service_element .text {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+#services_page .service_element .text p {
+  width: 35rem;
+}
+
 /*services page*/
 
 
-@media screen and (min-width: 769px) {
+/* about us page */
+
+#about {
+  margin-top: 15vh;
+}
+
+#about h1 {
+  color: var(--yellow);
+  text-align: center;
+  font-family: Apple Juice;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 5rem auto;
+  margin-top: 25rem;
+}
+
+#about .container {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+#about .container>div {
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .container h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#about .container>div:nth-child(2) {
+  margin-left: -5rem;
+}
+
+#about .container>div:nth-child(3) {
+  margin-left: 5rem;
+}
+
+#values h2 {
+  color: var(--yellow);
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+#values h2 span {
+  color: var(--aqua);
+  font-family: Apple Juice;
+  font-weight: 400;
+}
+
+#values .container {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0 8rem;
+  margin-bottom: 10rem;
+}
+
+#values .container>div {
+  margin-top: 4rem;
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#values h4 {
+  color: var(--blue);
+  font-family: Apple Juice;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#values p {
+  color: var(--blue);
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#values figure {
+  border-radius: 2rem;
+}
+
+#values figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+/* about us page */
+
+
+/* Contact page */
+
+#contact {
+  margin-top: 25vh;
+  margin-bottom: 20rem;
+}
+
+#contact h2 {
+  color: var(--yellow);
+  text-align: center;
+  font-family: Apple Juice;
+  font-size: 3rem;
+  font-weight: 400;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+#contact form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90rem;
+  gap: 4rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#contact .name,
+#contact .lastname,
+#contact .phone,
+#contact .mail,
+#contact .schedule,
+#contact .date {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35rem;
+  flex-grow: 1;
+}
+
+#contact .service {
+  flex-basis: 70rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#contact .service .services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#contact .services div {
+  display: flex;
+  align-items: center;
+}
+
+#contact form label {
+  color: var(--blue);
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#contact .message {
+  flex-grow: 1;
+}
+
+#contact textarea {
+  width: 100%;
+  height: 15rem;
+  border: 2px solid var(--blue);
+  resize: none;
+  color: var(--blue);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#contact .name input,
+#contact .lastname input,
+#contact .phone input,
+#contact .mail input,
+#contact .schedule input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--blue);
+  color: var(--blue);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#contact .date input {
+  background-color: transparent;
+  border: none;
+  color: var(--blue);
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+#contact .date input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+}
+
+#contact input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* Contact page */
+
+/* @media screen and (min-width: 769px) {
   #hero img {
     max-height: 83vh;
   }
-}
+} */
