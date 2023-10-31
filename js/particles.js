@@ -2,7 +2,6 @@ const container = document.getElementById('container');
 const ctx = container.getContext('2d');
 container.width = container.clientWidth;
 container.height = window.innerHeight * 0.83;
-const svgs = document.querySelectorAll("svg");
 
 let particlesArray = [];
 let imgsArrays = ['img/1.png','img/2.png','img/3.png','img/4.png','img/5.png'];

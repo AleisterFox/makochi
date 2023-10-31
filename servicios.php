@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<header>
+    <header>
         <nav>
             <ul>
                 <li><a href="nosotros.php">Nosotros</a></li>
@@ -89,8 +89,7 @@
                 <p>Nogal 800, Col. Arboledas, C.P. 76140, Querétaro, Qro.</p>
                 <a href="" class="button green">Cómo llegar <i class="fa-solid arrow-right"></i></a>
             </div>
-            <iframe
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Nogal%20800,%20Col.%20Arboledas,%20C.P.%2076140,%20Quer%C3%A9taro,%20Qro.+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Nogal%20800,%20Col.%20Arboledas,%20C.P.%2076140,%20Quer%C3%A9taro,%20Qro.+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </section>
     </main>
     <footer>

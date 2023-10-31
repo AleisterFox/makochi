@@ -15,14 +15,14 @@
             <ul>
                 <li><a href="nosotros.php">Nosotros</a></li>
                 <li><a href="servicios.php">Servicios</a></li>
-                <li><a href="">Instalaciones</a></li>
+                <li><a href="facilities.php">Instalaciones</a></li>
             </ul>
             <figure>
                 <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
             </figure>
             <ul>
-                <li><a href="">Talleres</a></li>
-                <li><a href="">Inscripciones</a></li>
+                <li><a href="talleres.php">Talleres</a></li>
+                <li><a href="#inscriptions">Inscripciones</a></li>
                 <li><a href="contact.php" class="button blue">Contacto</a></li>
             </ul>
         </nav>
@@ -31,13 +31,12 @@
         <section id="hero">
 
             <canvas id="container">
-                <img src="img/Fondo.jpg" alt="">
 
             </canvas>
 
             <div class="container">
                 <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
-                <a href="#" class="button green">Agenda tu cita</a>
+                <a href="contact.php" class="button green">Agenda tu cita</a>
             </div>
 
             <div class="sheet">
@@ -158,7 +157,7 @@
         <section id="inscriptions">
             <div>
                 <h2>Inscripciones abiertas con material incluido</h2>
-                <a href="" class="button green">Agenda tu cita</a>
+                <a href="contact.php" class="button green">Agenda tu cita</a>
             </div>
             <div>
                 <div class="dialog">

@@ -1,29 +1,32 @@
-const container = document.querySelector('body');
-const ctx = container.getContext('2d');
-container.width = container.clientWidth;
-container.height = window.innerHeight * 0.83;
-const svgs = document.querySelectorAll("svg");
+const main = document.querySelector('main');
+const contain = document.createElement('canvas');
+const ctxx = contain.getContext('2d');
+main.appendChild(contain);
+contain.style.position = 'absolute';
+contain.style.top = '0';
+contain.width = main.clientWidth;
+contain.height = main.clientHeight;
 
-let particlesArray = [];
-let imgsArrays = ['img/1.png','img/2.png','img/3.png','img/4.png','img/5.png'];
+let particlesArrays = [];
+let imgsArrayss = ['img/lapiz.png'];
 
-//Mouse position
+//Mousee position
 
-let mouse = container.width < 769 ? {
+let mousee = main.width < 769 ? {
     x: null,
     y: null,
-    radius: (container.height/80) * (container.width/80)
+    radius: (main.height/80) * (main.width/80)
 }: {
     x: null,
     y: null,
-    radius: (container.height/120) * (container.width/120)
+    radius: (main.height/120) * (main.width/120)
 };
 
 
-window.addEventListener('mousemove', function (event) {
-    const rect = container.getBoundingClientRect();
-    mouse.x = event.clientX - rect.left;
-    mouse.y = event.clientY - rect.top;
+window.addEventListener('mouseemove', function (event) {
+    const rect = main.getBoundingClientRect();
+    mousee.x = event.clientX - rect.left;
+    mousee.y = event.clientY - rect.top;
 });
 
 function randInt() {
@@ -31,12 +34,12 @@ function randInt() {
     return (randomNumber);
 }
 
-class Particle {
+class Trazos {
 
     constructor(x, y, directionX, directionY, size) {
         let a1 = randInt();
         this.imgElement = document.createElement('img');
-        this.imgElement.src = imgsArrays[a1];
+        this.imgElement.src = imgsArrayss[a1];
         this.x = x;
         this.y = y;
         this.directionX = directionX
@@ -52,37 +55,37 @@ class Particle {
     }
 
     draw() {
-        ctx.drawImage(this.imgElement, this.x, this.y, this.size, this.size);
+        ctxx.drawImage(this.imgElement, this.x, this.y, this.size, this.size);
     }
 
     update() {
         // check if particle is still within canvas
-        if (this.x > container.width || this.x < 0) {
+        if (this.x > contain.width || this.x < 0) {
             this.directionX = -this.directionX;
         }
 
-        if (this.y > container.height || this.y < 0) {
+        if (this.y > contain.height || this.y < 0) {
             this.directionY = - this.directionY;
         }
 
-        // Check Collision Detection - Mouse Position / Particle Position
-        let dx = mouse.x - this.x;
-        let dy = mouse.y - this.y;
+        // Check Collision Detection - Mousee Position / Particle Position
+        let dx = mousee.x - this.x;
+        let dy = mousee.y - this.y;
         let distance = Math.sqrt((dx ** 2) + (dy ** 2));
-        if (distance < mouse.radius + this.size) {
-            if (mouse.x < this.x && this.x < container.width - this.size * 20) {
+        if (distance < mousee.radius + this.size) {
+            if (mousee.x < this.x && this.x < contain.width - this.size * 20) {
                 this.x += 20;
             }
 
-            if (mouse.x > this.x && this.x > this.size * 20) {
+            if (mousee.x > this.x && this.x > this.size * 20) {
                 this.x -= 20;
             }
 
-            if (mouse.y < this.y && this.y < container.height - this.size * 20) {
+            if (mousee.y < this.y && this.y < contain.height - this.size * 20) {
                 this.y += 20;
             }
 
-            if (mouse.y > this.y && this.y > this.size * 20) {
+            if (mousee.y > this.y && this.y > this.size * 20) {
                 this.y -= 20;
             }
         }
@@ -99,7 +102,7 @@ class Particle {
 // Initiate particles
 
 function init() {
-    let numberOfParticles = (container.height * container.width) / 30000;
+    let numberOfParticles = (contain.height * contain.width) / 30000;
     for (let i = 0; i < numberOfParticles; i++) {
         let size = (Math.random() * 20) + 1;
         let x = (Math.random() * ((window.innerWidth - size * 5) - (size * 5)) + size * 5);
@@ -107,16 +110,16 @@ function init() {
         let directionX = (Math.random() * 2) - 1;
         let directionY = (Math.random() * 2) - 1;
 
-        particlesArray.push(new Particle(x, y, directionX, directionY, size));
+        particlesArrays.push(new Particle(x, y, directionX, directionY, size));
     }
 }
 
 function animate() {
     requestAnimationFrame(animate);
-    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    ctxx.clearRect(0, 0, innerWidth, innerHeight);
 
-    for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].update();
+    for (let i = 0; i < particlesArrays.length; i++) {
+        particlesArrays[i].update();
     }
 }
 
