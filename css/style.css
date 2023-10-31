@@ -51,6 +51,10 @@ ol {
   --aqua: #9AC7CD;
 }
 
+.hide {
+  display: none !important;
+}
+
 .button {
   border-radius: 100px;
   width: 15rem;
@@ -63,6 +67,8 @@ ol {
   font-weight: 500;
   color: white;
   transition: all 0.15s ease-in-out;
+  min-width: fit-content;
+  padding: 0 1rem;
 }
 
 .button:hover {
@@ -1088,6 +1094,10 @@ footer a:hover {
   color: var(--yellow);
 }
 
+#talleres .arte h2 {
+  color: var(--green);
+}
+
 #talleres p {
   font-family: Montserrat;
   font-size: 1.4rem;
@@ -1135,6 +1145,107 @@ footer a:hover {
   max-width: 20rem;
 }
 
+#talleres h5 {
+  color: var(--blue);
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#talleres .horarios p,
+#talleres .description p {
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+#talleres .container {
+  margin: 5rem 0;
+  display: flex;
+  padding: 0 8rem;
+  padding-right: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+}
+
+#talleres .arte .container {
+  margin: 5rem 0;
+  display: flex;
+  padding: 0 8rem;
+  padding-left: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+}
+
+#talleres .container .description {
+  flex-basis: 50rem;
+}
+
+#talleres .container .description p {
+  width: 100%;
+  max-width: 60rem;
+  margin-bottom: 2rem;
+}
+
+#talleres .baile .container .next {
+  flex-basis: 60rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8rem;
+}
+
+#talleres .arte .container .next {
+  flex-basis: 60rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 8rem;
+}
+
+#talleres .baile .container .right-cont {
+  height: 100%;
+  background-color: var(--yellow);
+  padding: 4rem 15rem;
+  padding-right: 0;
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+}
+
+#talleres .arte .container .right-cont {
+  height: 100%;
+  background-color: var(--green);
+  padding: 4rem 15rem;
+  padding-left: 4rem;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+}
+
+#talleres .container .right-cont h3 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#talleres .container .right-cont ul {
+  list-style: disc;
+}
+
+#talleres .container .right-cont li {
+  color:#FFF;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 60rem;
+}
+
+#talleres .button:hover {
+  cursor: pointer;
+}
 
 
 /* Talleres page */
