@@ -183,11 +183,11 @@ nav ul a.button:hover {
   position: relative;
 }
 
-#hero img {
+/* #hero img {
   height: 83vh;
   max-height: 50rem;
   width: 100%;
-}
+} */
 
 #hero .container {
   position: absolute;
@@ -265,12 +265,13 @@ h2 {
   margin: 0 auto;
   margin-top: 10rem;
   width: 50rem;
+  max-width: 70vw;
 }
 
 #us .container {
   background: url('../img/us-bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 80%;
   aspect-ratio: 123/65;
   display: flex;
@@ -316,6 +317,7 @@ h2 {
   background-position: center top;
   background-size: contain;
   height: 110vh;
+  max-height: 72rem;
   width: 100vw;
   display: flex;
   padding: 10% 8rem;
@@ -1215,28 +1217,28 @@ footer a:hover {
   border-bottom-left-radius: 1000px;
 }
 
-#talleres .arte .container .right-cont {
+#talleres .arte .container .left-cont {
   height: 100%;
   background-color: var(--green);
-  padding: 4rem 15rem;
+  padding: 4rem 10rem;
   padding-left: 4rem;
   border-top-right-radius: 1000px;
   border-bottom-right-radius: 1000px;
 }
 
-#talleres .container .right-cont h3 {
+#talleres .container h3 {
   color: #FFF;
   font-family: Montserrat;
   font-size: 3rem;
   font-weight: 500;
 }
 
-#talleres .container .right-cont ul {
+#talleres .container ul {
   list-style: disc;
 }
 
-#talleres .container .right-cont li {
-  color:#FFF;
+#talleres .container li {
+  color: #FFF;
   font-family: Montserrat;
   font-size: 2rem;
   font-weight: 500;
@@ -1250,9 +1252,107 @@ footer a:hover {
 
 /* Talleres page */
 
+/*Instalaciones page */
 
-/* @media screen and (min-width: 769px) {
-  #hero img {
-    max-height: 83vh;
+#facilities.instalaciones {
+  margin-top: 25vh;
+}
+
+#facilities.instalaciones>p {
+  color: var(--blue);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*Instalaciones page */
+
+@media screen and (max-width: 768px) {
+  #hero .container {
+    padding: 0 1rem;
+    width: 100%;
   }
-} */
+
+  .pet {
+    max-height: 40vh;
+    bottom: -30rem;
+  }
+
+  .sheet h3 {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  #us .container  {
+    width: 100%;
+  }
+
+  #us .container p {
+    font-size: 1.4rem;
+  }
+
+  #services {
+    padding: 10% 0rem;
+    background-size: cover;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  #services>figure.animation {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  #services>figure.animation img {
+    object-fit: cover;
+  }
+
+  #services .title {
+    height: 30%;
+  }
+
+  #services .title h2 {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  #services .services {
+    margin-top: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  #hero {
+    max-height: 100vh;
+  }
+
+  .pet {
+    max-height: 30vh;
+    width: 20rem;
+    bottom: -20vh;
+    right: 0;
+  }
+
+  .pet img {
+    object-fit: cover;
+
+  }
+
+  .sheet {
+    width: 16rem;
+    left: 1rem;
+    bottom: -15rem;
+  }
+
+  .sheet h3 {
+    font-size: 1.8rem;
+    width: 70%;
+  }
+}

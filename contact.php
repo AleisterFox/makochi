@@ -15,14 +15,14 @@
             <ul>
                 <li><a href="nosotros.php">Nosotros</a></li>
                 <li><a href="servicios.php">Servicios</a></li>
-                <li><a href="">Instalaciones</a></li>
+                <li><a href="facilities.php">Instalaciones</a></li>
             </ul>
             <figure>
                 <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
             </figure>
             <ul>
-                <li><a href="">Talleres</a></li>
-                <li><a href="">Inscripciones</a></li>
+                <li><a href="talleres.php">Talleres</a></li>
+                <li><a href="index.php#inscriptions">Inscripciones</a></li>
                 <li><a href="contact.php" class="button blue">Contacto</a></li>
             </ul>
         </nav>
@@ -97,8 +97,7 @@
                 <p>Nogal 800, Col. Arboledas, C.P. 76140, Querétaro, Qro.</p>
                 <a href="" class="button green">Cómo llegar <i class="fa-solid arrow-right"></i></a>
             </div>
-            <iframe
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Nogal%20800,%20Col.%20Arboledas,%20C.P.%2076140,%20Quer%C3%A9taro,%20Qro.+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Nogal%20800,%20Col.%20Arboledas,%20C.P.%2076140,%20Quer%C3%A9taro,%20Qro.+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </section>
     </main>
     <footer>

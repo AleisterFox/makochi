@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Makochi</title>
 </head>
 
@@ -28,68 +29,42 @@
         </nav>
     </header>
     <main>
-        <section id="about">
-            <h1>Somos un kinder bilingüe con una educación constructiva</h1>
+
+        <section id="facilities" class="instalaciones">
+            <h2>Conoce Nuestras Instalaciones</h2>
+            <p>Nuestros salones son amplios y adaptados para desarrollar las habilidades de los peques con material adecuado para cada edad.</p>
             <div class="container">
-                <div class="aqua">
-                    <h3>En Makochi impulsamos: la creatividad, los valores,</h3>
-                </div>
-                <div class="blue">
-                    <h3>constante construcción de nuevos conocimientos,</h3>
-                </div>
-                <div class="yellow">
-                    <h3>el juego, la lectura,</h3>
-                </div>
-                <div class="melon">
-                    <h3>su autoestima, arte y la expresión.</h3>
-                </div>
-            </div>
-        </section>
-        <section id="values">
-            <h2>Cada peque es valorado, cuidado y guiado hacia un futuro lleno de éxitos, mientras disfruta de un
-                <span>aprendizaje lleno de sonrisas</span>.
-            </h2>
-            <div class="container">
-                <div>
-                    <h4>Misión</h4>
-                    <p>Brindar a los niños de “Makochi” las herramientas necesarias para lograr que se desarrollen
-                        integralmente en su parte académica, social, emocional y física, a través de compromiso,
-                        respeto, trabajo en equipo y amor.</p>
+                <figure>
+                    <img src="img/fachada.jpg" alt="fachada de makochi">
+                </figure>
+                <div class="table">
+                    <figure>
+                        <img src="img/jardin.jpeg" alt="jardin de makochi">
+                    </figure>
+                    <p>Contamos con todas las medidas de seguridad y protocolos requeridos por las autoridades.</p>
+                    <figure>
+                        <img src="img/pizarron.jpeg" alt="salon de preescolar">
+                    </figure>
+                    <figure>
+                        <img src="img/casita.jpeg" alt="casita de madera dentro de salon en makochi">
+                    </figure>
                 </div>
                 <figure>
-                    <img src="img/mesita.jpeg" alt="">
+                    <img src="img/preescolar.jpg" alt="salon">
                 </figure>
-                <div>
-                    <h4>Visión</h4>
-                    <p>Brindar un espacio seguro y confiable donde los alumnos puedan adquirir las herramientas
-                        necesarias para sus aprendizajes fomentando la iniciativa, la autonomía y el respeto.</p>
-                </div>
                 <figure>
-                    <img src="img/casita2.jpeg" alt="">
+                    <img src="img/casita2.jpeg" alt="casita de madera dentro de salon en makochi">
                 </figure>
-                <div>
-                    <p>Generar un ambiente cálido a través de una comunicación asertiva entre colegio, padres de
-                        familia y docentes para facilitar la autonomía, autoestima y seguridad en cada niño.</p>
-                </div>
                 <figure>
-                    <img src="img/salon.jpeg" alt="">
+                    <img src="img/mesita.jpeg" alt="salon">
+                </figure>
+                <figure>
+                    <img src="img/patio.jpeg" alt="patio dentro de makochi">
                 </figure>
             </div>
+            <a href="" class="button yellow">Ver más</a>
         </section>
-        <section id="inscriptions">
-            <div>
-                <h2>Inscripciones abiertas con material incluido</h2>
-                <a href="" class="button green">Agenda tu cita</a>
-            </div>
-            <div>
-                <div class="dialog">
-                    <h3>¡Ven a conocer a Makochi!</h3>
-                </div>
-                <figure class="animation">
-                    <img src="img/makochi_saliendo.gif" alt="Makochi apareciendo">
-                </figure>
-            </div>
-        </section>
+
         <section id="location">
             <h2>Ven y conócenos</h2>
             <div>
@@ -132,8 +107,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/particles.js"></script>
     <script src="js/script.js"></script>
 </body>
 
