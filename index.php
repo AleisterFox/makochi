@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Makochi</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="nosotros.php">Nosotros</a></li>
                 <li><a href="servicios.php">Servicios</a></li>
                 <li><a href="facilities.php">Instalaciones</a></li>
@@ -20,11 +21,12 @@
             <figure>
                 <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
             </figure>
-            <ul>
+            <ul class="menu m2">
                 <li><a href="talleres.php">Talleres</a></li>
                 <li><a href="#inscriptions">Inscripciones</a></li>
                 <li><a href="contact.php" class="button blue">Contacto</a></li>
             </ul>
+            <i class="fa-solid fa-bars menu__button"></i>
         </nav>
     </header>
     <main>
@@ -55,7 +57,7 @@
                 <div>
                     <h3>Nuestro enfoque es...</h3>
                 </div>
-                <div>
+                <div class="text">
                     <p>A través del juego, los niños estimulan su memoria, atención, resolución de problemas y
                         pensamiento creativo. Teniendo la oportunidad de practicar el lenguaje de manera significativa
                         conociendo nuevas palabras así aumentan su vocabulario y desarrollan habilidades de

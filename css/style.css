@@ -19,6 +19,10 @@ ol {
   list-style: none;
 }
 
+.menu__button {
+  display: none;
+}
+
 @font-face {
   font-family: Apple Juice;
   src: url('../Fonts/Apple\ Juice\ Regular.ttf');
@@ -303,6 +307,14 @@ h2 {
   column-gap: 3rem;
 }
 
+#us .container div.text {
+  flex-wrap: wrap;
+}
+
+#us .container div.text p {
+  flex-basis: 50rem;
+}
+
 #us .button {
   margin: 5rem auto;
 }
@@ -369,6 +381,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* width: fit-content; */
 }
 
 #services .service figure {
@@ -553,6 +566,9 @@ h2 {
   align-items: center;
   justify-content: center;
   height: 110vh;
+
+  align-content: center;
+  row-gap: 5rem;
 }
 
 #inscriptions h2 {
@@ -589,6 +605,8 @@ h2 {
 #inscriptions>div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #inscriptions>div:last-child {
@@ -1266,11 +1284,47 @@ footer a:hover {
   font-weight: 500;
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
 /*Instalaciones page */
 
 @media screen and (max-width: 768px) {
+
+  nav {
+    position: relative;
+    padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    background-color: transparent;
+    padding: 2rem;
+    top: 100%;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+  }
+
+  nav ul.m2 {
+    top: calc(200% + 4rem);
+  }
+
+  .menu__button {
+    display: block;
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: #5A8194;
+    margin-right: 4rem;
+  }
+
+  nav figure {
+    margin-left: 2rem;
+  }
+
   #hero .container {
     padding: 0 1rem;
     width: 100%;
@@ -1289,8 +1343,14 @@ footer a:hover {
     width: 100%;
   }
 
-  #us .container  {
+  #us .container {
     width: 100%;
+    background-color: #FBC770;
+    padding: 2rem 0;
+  }
+
+  #us h2 {
+    margin-bottom: 2rem;
   }
 
   #us .container p {
@@ -1323,19 +1383,202 @@ footer a:hover {
   }
 
   #services .services {
-    margin-top: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 25%;
+    gap: 0;
+    justify-content: space-around;
+    width: 100%;
   }
 
+  #services .service {
+    width: 15rem;
+  }
+
+  #services .service figure {
+    aspect-ratio: 1;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #facilities, #activities, #inscriptions {
+    padding: 0rem 2rem;
+  }
+
+  #facilities .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  #activities .sheet {
+    width: 18rem;
+    left: 1rem;
+    bottom: -15rem;
+    margin: 0rem 2rem;
+  }
+  
+  #activities .sheet figure.activity {
+    width: 12rem;
+    height: 12rem;
+    top: -25%;
+    left: -25%;
+  }
+
+  .sheet h3 {
+    font-size: 1.8rem;
+    width: 70%;
+  }
+
+  #inscriptions {
+    height: 100vh;
+  }
+
+  #inscriptions>div h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #inscriptions>div:last-child {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  #inscriptions .dialog {
+    width: 100vw;
+    height: 35vw;
+  }
+
+  #inscriptions .dialog h3 {
+    width: 50%;
+  }
+
+  #inscriptions figure.animation {
+    align-self: center;
+    margin-right: 0;
+    width: 30vw;
+    height: 30vw;
+  }
+
+  #location div {
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    column-gap: 2rem;
+  }
+
+  #location div p {
+    margin-right: 0;
+  }
+
+  footer .rights img {
+    height: 2rem;
+    aspect-ratio: 1;
+  }
+
+  #about .container {
+    width: 70%;
+  }
+
+  #about .container>div {
+    height: fit-content;
+  }
+
+  #values h2 {
+    width: 90%;
+  }
+
+  #values .container {
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem ;
+  }
+
+  #values .container>div {
+    padding: 0;
+  }
+
+  #facilities.instalaciones>p {
+    width: 80%;
+  }
+
+  #facilities .table {
+    gap: 1rem;
+    max-height: fit-content;
+  }
+
+  #facilities .table figure, #facilities .table p {
+    margin: 0;
+  }
+
+  #talleres .container {
+    padding: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .horarios {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  #talleres .container .description {
+    margin: 2rem;
+    margin-top: 0;
+  }
+
+  #contact h2 {
+    width: 80%;
+  }
+
+  #contact form {
+    padding: 0rem 2rem;
+  }
+
+  #services_page .service_element>div {
+    height: fit-content;
+    flex-wrap: wrap;
+    row-gap: 2rem ;
+    padding: 5rem 5%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left_container::after, .right_container::after {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #services_page .service_element>div p {
+    width: 100%;
+    margin: 0;
+  }
+
+  #services_page figure {
+    margin: 0;
+  }
+
+  #services_page h4, #services_page li, #services_page .service_element .text p, #services_page ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   #hero {
     max-height: 100vh;
   }
 
+  .sheet {
+    left: 1%;
+    width: 17rem;
+  }
+
   .pet {
     max-height: 30vh;
-    width: 20rem;
+    width: 17rem;
     bottom: -20vh;
     right: 0;
   }
@@ -1345,14 +1588,27 @@ footer a:hover {
 
   }
 
-  .sheet {
-    width: 16rem;
-    left: 1rem;
-    bottom: -15rem;
+  
+
+}
+
+
+@keyframes showMenu {
+  from {
+    transform: translateX(-100%);
   }
 
-  .sheet h3 {
-    font-size: 1.8rem;
-    width: 70%;
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes hideMenu {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
   }
 }

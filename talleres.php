@@ -12,21 +12,22 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="nosotros.php">Nosotros</a></li>
-                <li><a href="servicios.php">Servicios</a></li>
-                <li><a href="facilities.php">Instalaciones</a></li>
-            </ul>
-            <figure>
-                <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
-            </figure>
-            <ul>
-                <li><a href="talleres.php">Talleres</a></li>
-                <li><a href="index.php#inscriptions">Inscripciones</a></li>
-                <li><a href="contact.php" class="button blue">Contacto</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="menu">
+                    <li><a href="nosotros.php">Nosotros</a></li>
+                    <li><a href="servicios.php">Servicios</a></li>
+                    <li><a href="facilities.php">Instalaciones</a></li>
+                </ul>
+                <figure>
+                    <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
+                </figure>
+                <ul class="menu m2">
+                    <li><a href="talleres.php">Talleres</a></li>
+                    <li><a href="index.php#inscriptions">Inscripciones</a></li>
+                    <li><a href="contact.php" class="button blue">Contacto</a></li>
+                </ul>
+                <i class="fa-solid fa-bars menu__button"></i>
+            </nav>
     </header>
     <main>
         <section id="talleres">
