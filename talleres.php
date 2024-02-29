@@ -12,22 +12,22 @@
 
 <body>
     <header>
-            <nav>
-                <ul class="menu">
-                    <li><a href="nosotros.php">Nosotros</a></li>
-                    <li><a href="servicios.php">Servicios</a></li>
-                    <li><a href="facilities.php">Instalaciones</a></li>
-                </ul>
-                <figure>
-                    <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
-                </figure>
-                <ul class="menu m2">
-                    <li><a href="talleres.php">Talleres</a></li>
-                    <li><a href="index.php#inscriptions">Inscripciones</a></li>
-                    <li><a href="contact.php" class="button blue">Contacto</a></li>
-                </ul>
-                <i class="fa-solid fa-bars menu__button"></i>
-            </nav>
+        <nav>
+            <ul class="menu">
+                <li><a href="nosotros.php">Nosotros</a></li>
+                <li><a href="servicios.php">Servicios</a></li>
+                <li><a href="facilities.php">Instalaciones</a></li>
+            </ul>
+            <figure>
+                <a href="index.php"><img src="img/logo.png" alt="Logotipo Makochi"></a>
+            </figure>
+            <ul class="menu m2">
+                <li><a href="talleres.php">Talleres</a></li>
+                <li><a href="index.php#inscriptions">Inscripciones</a></li>
+                <li><a href="contact.php" class="button blue">Contacto</a></li>
+            </ul>
+            <i class="fa-solid fa-bars menu__button"></i>
+        </nav>
     </header>
     <main>
         <section id="talleres">
@@ -81,7 +81,9 @@
                             <img src="img/taller_arte.jpg" alt="niños dibujando en clase de arte">
                         </figure>
                         <div class="text green">
-                            <p>El propósito de esta sesión de aprendizaje es que los niños y niñas Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam autem, dolores ab perspiciatis delectus blanditiis eos possimus veritatis voluptas pariatur.</p>
+                            <p>La pintura es una actividad divertida y creativa para los niños, no solo es una forma de
+                                expresión artística, sino que también ayuda a los niños a desarrollar habilidades motoras
+                                finas, coordinación mano-ojo y creatividad.</p>
                         </div>
                     </div>
                     <div class="horarios">
@@ -95,12 +97,12 @@
                     <div class="left-cont">
                         <h3>Beneficios</h3>
                         <ul>
-                            <li>Estimulan las habilidades motoras y el ritmo.</li>
-                            <li>Favorecen la coordinación, la elasticidad y el equilibrio.</li>
-                            <li>Fomentan las habilidades sociales y la autoestima.</li>
-                            <li>Incrementan la felicidad, tanto instantánea como a largo plazo.</li>
-                            <li>Mejora el desarrollo físico. A través del baile se practica el sentido rítmico y la
-                                psicomotricidad</li>
+                            <li>La pintura es una manera excelente para que los niños expresen lo que sienten.</li>
+                            <li>Fomenta la comunicación y la expresión lingüística</li>
+                            <li>Estimula la creatividad y el pensamiento abstracto</li>
+                            <li>Mejora la coordinación motora</li>
+                            <li>A través de la pintura, los niños organizan sus pensamientos y ven el mundo desde
+                                una perspectiva única.</li>
                         </ul>
                     </div>
                     <div class="description">
