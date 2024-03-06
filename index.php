@@ -37,7 +37,7 @@
             </canvas>
 
             <div class="container">
-                <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
+                <h1>Bienvenidos a Makochi</h1>
                 <a href="contact.php" class="button green">Agenda tu cita</a>
             </div>
 
